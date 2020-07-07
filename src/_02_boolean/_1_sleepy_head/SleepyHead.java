@@ -10,11 +10,18 @@ public class SleepyHead {
 		// boolean variables can only hold one of two values - true or false
 
 		/************************  SLEEPY HEAD  **************************/
-		boolean isWeekend;
+		boolean isWeekend = false;
 		// Write code to ask the user what day it is.
-        
+        String weekend = JOptionPane.showInputDialog(null, "What day is it?");
+        if (weekend.equals("saturday")||(weekend.equals("sunday"))) {
+        	isWeekend = true;
+        }
 		// Set the boolean isWeekend based on the value they enter
-		
+if (isWeekend) {
+	JOptionPane.showMessageDialog(null, "Sleep in for the day!");
+}else {
+	JOptionPane.showMessageDialog(null,"Get up and go to school!!");
+}
 		
 		// If it is the weekend, tell the user they get to sleep in.
 		
@@ -23,13 +30,13 @@ public class SleepyHead {
 		
 		/************************   STAR STUDENT  **************************/
 
-		boolean passedExam;
+		boolean passedExam=false;
 		// Write code to ask the user what percentage they scored in their last exam
-
-		
+String percentage = JOptionPane.showMessageDialog(null,"what was your score on the last test?");
+		double score = 
 		// If they scored more than 70, they passed the exam.
 		// Set the boolean passedExam based on their score.
-		
+		if ()
 		// If the user passed the exam, congratulate them
 		
 		// otherwise, wish them better luck next time.
